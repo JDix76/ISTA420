@@ -1,0 +1,54 @@
+Chapter 4, Subqueries
+ISTA-420, T-SQL Fundamentals
+Readings
+Read pages, Chapter 4, 133 – 149 in the T-SQL Fundamentals book.
+Homework questions
+1. In your own words, what is a subquery?
+- A subquery is a query that sits inside of another query.
+
+2. In your own words, what is a self contained subquery?
+- A self-contained subqueries are independent of the tables in the outer query.
+
+3. In your own words, what is a correlated subquery?
+- Correlated subqueries are queries that refer to the attributes from the tables that appear in the outer query.
+- It cannot run by itself, it depends on its outside enviroment to run
+
+4. Give an example of a subquery that returns a single value. When would you use this kind of subquery?
+- subquery that returns a single value is called a sclar query. I would use this query when I want to get a single value from a row in a table
+
+SELECT orderid
+From Sales.orders
+Where empid = (select E.empid 
+From Hr.Employees AS E
+WHERE E.lastname LIKE N'C%');
+
+5. Give an example of a subquery that returns multiple values. When would you use this kind of subquery?
+- a subquery that returns mutiple values is called a multivalued subquery
+SELECT custid, orderid, orderdate,empid
+FROM Sales.Orders 
+WHERE custid In 
+	(SELECT C.custid
+	FROM Sales.Customers AS C 
+	WHERE C.country = N'USA');
+
+6. Give an example of a subquery that returns table values. When would you use this kind of subquery?
+select customerid, customername from customers where name like = 'Germany';
+
+7. What does the exists predicate do? Give an example.
+- Exits predicate accepts a subquery as input and returns True or False
+SELECT custid, companyname
+FROM Sales.Customers AS C
+WHERE country = N'Spain'
+	AND EXISTS
+		(SELECT * FROM Sales.Orders AS O 
+		WHERE O.custid = C.custid);
+
+8. What happens if we use the not operator before a predicate? Give an example.
+- If you use NOT EXISTS it will only return one row, it acts like a short-circut and it doesnt process all qualifying rows.
+- evaluates to true if false and fale is true
+
+9. When you use exists or not exists with respect to a row in a database, does it return two or three values? Explain your answer. 
+- It returns two values, because it either exist or does not exist.
+
+10. How would you a subquery to calculate aggregates? For example, you want to calculate yearly sales of a product, and you also want to keep a running sum of total sales. Explain how you would use a subquery to do this.
+- You could use the correlated subquery against a second instance of the view to calculate the runnning-total quantity and the subquery hould filter all rows where the order year is smaller than or equal to the current year.

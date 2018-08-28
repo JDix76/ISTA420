@@ -1,0 +1,34 @@
+TSQL2a Homework
+
+1. List the order of execution of SQL query.
+-  1. FROM, ON, OUTER, WHERE, GROUP BY, ROLLUP,HAVING,SELECT,DISTINCT,ORDER BY, TOP
+
+2. What does the from clause do?
+- it is where you specify the names of the tables you want to query and table operators that operate on those tables.
+
+3. What does the where clause do?
+- you specify a predicate or logical expression to filter the rows returned by the FROM phase. / it is a row filter
+
+4. What does the group by clause do?
+- you can use this to arrange th rows returned by the query processing phase in groups.
+
+5. What does the having clause do?
+- group filter
+- 
+6. What does the select clause do?
+- SELECT statement returns a result set of records from one or more tables. A SELECT statement retrieves zero or more rows from one or more database tables or database views.
+
+7. What does the distinct keyword do?
+-  sets a maximum number of rows for the result set
+
+8. WHat does the order clause do? 
+- it is used to sort the rows in the outuput for presentation purposes.
+
+9. What does the limit clause do?
+- it limits the number of rows displayed
+
+10 What does the top clause do?
+- you can use it to limit the number or percentage of rows to return
+
+11.What do the offset....fetch....clauses do?
+- used in conjunction with SELECT and ORDER BY clause to provide a means to retrieve a range of records.
