@@ -1,0 +1,49 @@
+.echo on
+.headers on
+
+--AUTHOR: JAMES DIX
+--DATE: 22 AUG 2018
+--SUBJECT: TSQL-CHP5-HW
+
+Read chapter 5, pages 161 – 183 in the T-SQL Fundamentals book.
+Discussion questions
+1. What is a table expression? Can you give a technical deﬁnition of a table expression?
+- A table expression is a named query expression that represents a valid relational table. 
+- Some kind of query that returns a unique row.
+
+2. In what SQL clause are derived tables (table valued subqueries) located?
+- Derived tables are located are located on the outer query or the in the FROM clause of an outer query
+
+3. Why can you refer to column aliases in an outer query that you deﬁned in an inner table valued subquery?
+- The ablility to reference aliases comes stritcly from being table to use table expressions.
+- it runs the subquery first
+
+4. What SQL key word deﬁnes a common table expression?
+- The WITH statement is the key workd used to define common table expression in SQL.
+
+5. When using common table expressions, can a subsequent derived table use a table alias declared in a preceding table expression?
+- yes, because it runs the subquery yes
+
+6. Can a main query refer to a previously deﬁned common table expression by multiple aliases?
+- yes, because each CTE represents a seperate table that the machine retains in memory
+
+7. In SQL, is a view a durable object?
+- Yes because it is reusable and the query is stored in
+
+8. In a view, what does WITH CHECK OPTION do? Why is this important?
+- You can use this when want to prevent modifications that conflict with view's filter.
+
+9. In a view, what does SCHEMABINDING do? Why is this important?
+- it binds the schema of referenced objects and colums to the schema of the referencing object 
+- the bottom table cannot be changed or altered
+
+10. What is a table valued function?
+- A table-valued function is a reusable table exprssion that supports input parameters
+
+
+11. What does the APPLY operator do?(180)
+- The APPLY operator operates on two input tables
+
+12. What are the two forms of the APPLY operator? Give an example of each.
+- CROSS APPLY
+- OUTER APPLY
