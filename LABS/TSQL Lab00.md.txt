@@ -1,0 +1,69 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180809133028
+Username: LAPTOP-LNAQ7EOT\butta
+RunAs User: LAPTOP-LNAQ7EOT\butta
+Configuration Name: 
+Machine: LAPTOP-LNAQ7EOT (Microsoft Windows NT 10.0.17134.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4492
+PSVersion: 5.1.17134.165
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17134.165
+BuildVersion: 10.0.17134.165
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\butta\Documents\PowerShell_transcript.LAPTOP-LNAQ7EOT.t+91ULVG.20180809133028.txt
+PS C:\Users\butta> cd desktop
+PS C:\Users\butta\desktop> mkdir README.md
+
+
+    Directory: C:\Users\butta\desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/9/2018   1:30 PM                README.md
+
+
+PS C:\Users\butta\desktop> mkdir Exercises
+
+
+    Directory: C:\Users\butta\desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/9/2018   1:30 PM                Exercises
+
+
+PS C:\Users\butta\desktop> mkdir Labs
+
+
+    Directory: C:\Users\butta\desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/9/2018   1:30 PM                Labs
+
+
+PS C:\Users\butta\desktop> mkdir Homework
+
+
+    Directory: C:\Users\butta\desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/9/2018   1:31 PM                Homework
+
+
+PS C:\Users\butta\desktop> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20180809133138
+**********************
