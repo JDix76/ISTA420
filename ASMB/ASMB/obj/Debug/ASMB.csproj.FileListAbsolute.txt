@@ -1,7 +1,0 @@
-C:\Users\butta\Desktop\ISTA220\Exercise\ASMB\ASMB\obj\Debug\ASMB.csprojAssemblyReference.cache
-C:\Users\butta\Desktop\ISTA220\Exercise\ASMB\ASMB\obj\Debug\ASMB.csproj.CoreCompileInputs.cache
-C:\Users\butta\Desktop\ISTA220\Exercise\ASMB\ASMB\bin\Debug\ASMB.exe.config
-C:\Users\butta\Desktop\ISTA220\Exercise\ASMB\ASMB\bin\Debug\ASMB.exe
-C:\Users\butta\Desktop\ISTA220\Exercise\ASMB\ASMB\bin\Debug\ASMB.pdb
-C:\Users\butta\Desktop\ISTA220\Exercise\ASMB\ASMB\obj\Debug\ASMB.exe
-C:\Users\butta\Desktop\ISTA220\Exercise\ASMB\ASMB\obj\Debug\ASMB.pdb
